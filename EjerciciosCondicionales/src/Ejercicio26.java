@@ -16,7 +16,7 @@ public class Ejercicio26 {
 		c = c*c;
 		d = a+b;
 		if(c<d) {
-			
+			System.out.println("");
 		}
 	}
 
