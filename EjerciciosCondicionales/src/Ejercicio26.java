@@ -16,12 +16,18 @@ public class Ejercicio26 {
 		hipotenusaCuadrado = Math.pow(hipotenusa, 2);
 		catetosSuma = catetoOpuesto + catetoContiguo;
 		casoDos = hipotenusaCuadrado - catetoOpuesto;
-		casoTres = hipotenusaCuadrado - Math.pow(catetoContiguo, 2);
+		casoTres = hipotenusaCuadrado - catetoContiguo;
 		if(hipotenusaCuadrado == catetosSuma) {
 			System.out.println("Es un triangulo rectangulo");
 		}
-		else if(){
-			System.out.println("Es un triangulo obtusangulo");
+		else if(catetoContiguo == casoDos){
+			System.out.println("Es un triangulo rectangulo");
+		}
+		else if(catetoOpuesto == casoTres) {
+			System.out.println("Es un triangulo rectangulo");
+		}
+		else {
+			System.out.println("No es un triangulo rectangulo");
 		}
 	}
 
