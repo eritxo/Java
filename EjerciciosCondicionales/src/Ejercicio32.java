@@ -17,13 +17,12 @@ public class Ejercicio32 {
 		if((a==0)) {
 			System.out.println("No es una ecuacion de segundo grado");
 		}
-		else if(discriminante < 0) {
+		else if((a*c*4) > (b*b)) {
 			System.out.println("No hay soluciones reales");
 		}
 		else if(discriminante == 0) {
 			System.out.println("Una unica solucion real");
-			System.out.println("x= "+ resultadoNegativo);
-
+			System.out.println("x= "+ resultadoPositivo);
 		}
 		else if(discriminante > 0) {
 			System.out.println("x1= "+ resultadoNegativo);
