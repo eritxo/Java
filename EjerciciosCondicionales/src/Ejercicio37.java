@@ -13,20 +13,26 @@ public class Ejercicio37 {
 		System.out.print("Introduce los segundos: ");
 		segundos = sc.nextInt();
 		segundos++;
-		if(segundos == 60) {
-			segundosAMinutos = segundos/60;
-			minutos += segundosAMinutos;
-			segundos = 0;
+		if((hora >= 0) && (minutos >= 0) && (segundos >= 0)) {
+			if(segundos == 60) {
+				segundosAMinutos = segundos/60;
+				minutos += segundosAMinutos;
+				segundos = 0;
+			}
+			if(minutos == 60) {
+				minutosAHora = minutos/60;
+				hora += minutosAHora;
+				minutos = 0;
+			}
+			if(hora >= 24) {
+				hora = hora - 24;
+			}
+			System.out.println("La hora un segundo despues sera: " + hora+":"+minutos+":"+segundos);
 		}
-		if(minutos == 60) {
-			minutosAHora = minutos/60;
-			hora += minutosAHora;
-			minutos = 0;
+		else {
+			System.out.println("No se puede introducir numeros negativos");
 		}
-		if(hora == 24) {
-			hora = 0;
-		}
-		System.out.println("La hora un segundo despues sera: " + hora+":"+minutos+":"+segundos);
+		
 	}
 
 }
