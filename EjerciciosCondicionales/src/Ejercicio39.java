@@ -19,6 +19,7 @@ public class Ejercicio39 {
 				horaAngeles = hora-8;
 				if(horaAngeles < 0){
 					horaAngeles *= -1;
+					horaAngeles = 24 - horaAngeles;
 					System.out.println("Hora en Los Angeles " + horaAngeles + " h.");
 				}
 				else {
@@ -30,6 +31,7 @@ public class Ejercicio39 {
 				horaMexico = hora-6;
 				if(horaMexico < 0){
 					horaMexico *= -1;
+					horaMexico = 24 - horaMexico;
 					System.out.println("Hora en Mexico DF " + horaMexico + " h.");
 				}
 				else {
