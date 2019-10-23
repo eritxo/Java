@@ -11,8 +11,8 @@ public class Ejercicio42 {
 		mes = sc.nextInt();
 		System.out.print("Introduce el año: ");
 		year = sc.nextInt();
-		if((mes > 0 ) || (year > 0) || (dia > 0)) {
-			if((year%4 == 0) && (year%100 !=0)) {
+		if((mes <= 12 ) || (year > 0) || (dia > 0)) {
+			if(((year%4 == 0) && (year%100 !=0)) || ((year%4 == 0) && (year%400 ==0))) {
 				if((mes == 2) && (dia <= 29)) {
 					System.out.println("Fecha valida");
 				}
