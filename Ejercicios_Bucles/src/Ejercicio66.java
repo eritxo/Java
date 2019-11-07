@@ -19,17 +19,17 @@ public class Ejercicio66 {
 					nota = sc.nextDouble();
 					sumaNotas = sumaNotas + nota;
 				}
+				else if(nota == -2) {
+					break;
+				}
 				else {
 					System.out.println("Nota incorrecta.");
-					nota = 0;
 					--examenes;
+					nota = 0;
 				}
 			}
 			sumaNotas = sumaNotas+1;
 			--examenes;
-			System.out.println("Examenes: " + examenes);
-			System.out.println("Suma de notas: " + sumaNotas);
-
 			notaMedia = sumaNotas/examenes;
 			System.out.println("Nota media : " + notaMedia);
 		}

@@ -18,7 +18,7 @@ public class Ejercicio58 {
 		while(((a%divisor != 0) || (b%divisor != 0)) && divisor > 1) {
 			divisor--;
 		}
-		System.out.println(divisor);
+		System.out.println("El maximo comun divisor es: " + divisor);
 	}
 
 }

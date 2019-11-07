@@ -4,19 +4,15 @@ public class Ejercicio56 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int resto = 0, c = 0;
 		System.out.print("Introduce el numerador: ");
 		int numerador = sc.nextInt();
 		System.out.print("Introduce el denominador: ");
 		int denominador  = sc.nextInt();
-		while((numerador > 2)) {
+		while((numerador%2 == 0) && (denominador%2 == 0)) {
 			numerador = numerador/2;
-			c++;
-			if((resto == 0) || (resto == 1)) {
-				
-			}
+			denominador = denominador/2;
 		}
-		
+		System.out.println(numerador+"/"+denominador);
 	}
 
 }
