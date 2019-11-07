@@ -18,7 +18,6 @@ public class Ejercicio55 {
 				System.out.print(" "+ divisor);
 			}
 			divisor++;
-			
 		}
 	}
 
