@@ -25,7 +25,7 @@ public class PT1MedinaMatiasEx3 {
 			incisivosDerArriba = (dientesArriba%100)/10;
 			incisivosIzqdaAbajo = (dientesAbajo/100)%10;
 			incisivosDerAbajo = (dientesAbajo%100)/10;
-			
+			//ACTUALIZAR
 			if((canIzqArriba != canIzqAbajo) && (canDerArriba != canDerAbajo)) {
 				chocanCaninos = false;
 			}
