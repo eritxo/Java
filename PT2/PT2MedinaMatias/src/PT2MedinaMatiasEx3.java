@@ -18,7 +18,7 @@ public class PT2MedinaMatiasEx3 {
 				contador++;
 			}
 			if(sumaDivisores == numeroIntroducido) {
-				System.out.println(numeroIntroducido);
+				System.out.println(numeroIntroducido + " es un numero perfecto.");
 			}
 			numeroIntroducido--;
 		}
