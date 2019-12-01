@@ -8,7 +8,6 @@ public class PT2MedinaMatiasEx1 {
 		double temperaturaA=0, temperaturaB=0, temperaturaC=0, tempMedia = 0, porcentajeMacho, 
 				porcentajeHembra, porcentajeNoFertil,totalHuevos;
 		int macho =0, hembra = 0, noFertil = 0, totalHuevosInt;
-		boolean finalizado = false;
 		//Hacemos un bucle para que el codigo se ejecute mientras ninguna de las temperaturas sea -1
 		while(tempMedia != -1) {
 			//Leemos las temperaturas por teclado
